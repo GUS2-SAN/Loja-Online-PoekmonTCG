@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Pokemon TCG Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Centro Pokémon TCG</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cart.html">Carrinho (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Barra de Busca -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar produtos...">
+            <button id="search-button">Buscar</button>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <select id="category-filter">
+                <option value="">Todas as Categorias</option>
+                <option value="eletronicos">Eletrônicos</option>
+                <option value="roupas">Roupas</option>
+                <option value="livros">Livros</option>
+            </select>
+            <input type="number" id="price-filter" placeholder="Preço máximo">
+            <button id="apply-filters">Aplicar Filtros</button>
+        </div>
+
+        <!-- Lista de Produtos -->
+        <h2>Produtos</h2>
+        <div class="products-grid">
+            <div class="product-card" data-id="1" data-category="eletronicos" data-price="500">
+                <a href="product.html?id=1">
+                    <img src="images/produto1.jpg" alt="PIKACHU EX">
+                    <h3>PIKACHU EX</h3>
+                    <p>R$ 500,00</p>
+                </a>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-card" data-id="2" data-category="roupas" data-price="700">
+                <a href="product.html?id=2">
+                    <img src="images/produto2.jpg" alt="MEWTWO VASTRO">
+                    <h3>MEWTWO VASTRO</h3>
+                    <p>R$ 700,00</p>
+                </a>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-card" data-id="3" data-category="livros" data-price="1250">
+                <a href="product.html?id=3">
+                    <img src="images/produto3.jpg" alt="CHARIZARD EX">
+                    <h3>CHARIZARD EX</h3>
+                    <p>R$ 1250,00</p>
+                </a>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adicione mais produtos aqui -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Loja Pokemon TCG.Augusto Santana.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
