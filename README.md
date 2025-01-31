@@ -92,4 +92,4 @@ O site é um **e-commerce completo** com:
 - Funcionalidades interativas como adicionar/remover itens e ajustar quantidades.
 - Design moderno e responsivo.
 
-Se precisar de mais detalhes ou ajustes, é só pedir! 😊
+
